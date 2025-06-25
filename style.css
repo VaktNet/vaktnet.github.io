@@ -49,6 +49,18 @@
 }
 
 body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+body {
+  background-image: url("assets/background-blueprint.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 header { background: #333; color: #fff; padding: 1rem; text-align: center; }
 section { padding: 1rem 2rem; }
 a { color: #0066cc; text-decoration: none; }
