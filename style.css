@@ -1,3 +1,17 @@
+.hero-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-heading h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-title {
+  font-size: 1.3rem; /* Bigger than normal text but smaller than your name */
+  font-weight: bold;
+}
 
 body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
 header { background: #333; color: #fff; padding: 1rem; text-align: center; }
