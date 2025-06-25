@@ -30,6 +30,23 @@
   font-size: 1.3rem; /* Bigger than normal text but smaller than your name */
   font-weight: bold;
 }
+.download-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #0033cc; /* Cobalt blue */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px; /* Pill shape */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+
+.download-button:hover {
+  background-color: #0022aa;
+}
 
 body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
 header { background: #333; color: #fff; padding: 1rem; text-align: center; }
