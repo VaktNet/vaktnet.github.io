@@ -188,6 +188,8 @@ button:hover {
 
 /* Dropdown Menu */
 .dropdown-menu {
+  list-style: none;
+  padding-left: 0;
   display: none;
   position: absolute;
   background-color: #222;
