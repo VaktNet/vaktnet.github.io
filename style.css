@@ -127,6 +127,15 @@
   }
 }
 
+/* === Tagline === */
+.tagline {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #cccccc;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
 /* === Hero Section === */
 .hero-heading {
   text-align: center;
