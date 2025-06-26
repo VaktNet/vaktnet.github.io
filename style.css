@@ -145,6 +145,12 @@ button:hover {
   padding: 0.5rem 1rem;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center; /* vertically centers the logo + text */
+  text-decoration: none;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -154,6 +160,7 @@ button:hover {
 .nav-logo {
   height: 2.2rem;
   margin-right: 0.5rem;
+  vertical-align: middle; /* Optional extra alignment */
 }
 
 .brand-name {
