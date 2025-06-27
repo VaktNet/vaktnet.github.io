@@ -5,40 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guy Teets – Resume</title>
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    h1, h2, h3 {
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+    nav a {
+      color: #66b2ff;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .navbar {
+      background-color: #111;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <header class="navbar">
+  <div class="navbar">
     <nav>
-      <a href="/">Home</a>
+      <a href="/index.html">Home</a>
       <a href="/about.html">About</a>
-      <div class="dropdown">
-        <button class="dropbtn">Projects</button>
-        <div class="dropdown-content">
-          <a href="/epic-universe.html">Epic Universe</a>
-          <a href="/disney-ot-wireless.html">Disney OT Cyber</a>
-          <a href="/disney-ot-architecture.html">Disney Security Architecture</a>
-          <a href="/disa-jrss.html">DISA MPLS</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Resume</button>
-        <div class="dropdown-content">
-          <a href="/resume.html">View Resume</a>
-          <a href="/assets/GTeets_Resume_06-2025.pdf" target="_blank">Download PDF</a>
-        </div>
-      </div>
+      <a href="/epic-universe.html">Epic Universe</a>
+      <a href="/disney-ot-wireless.html">Disney OT Cyber</a>
+      <a href="/disney-ot-architecture.html">Disney Security Architecture</a>
+      <a href="/disa-jrss.html">DISA MPLS</a>
+      <a href="/resume.html">View Resume</a>
+      <a href="/assets/GTeets_Resume_06-2025.pdf" target="_blank">Download PDF</a>
       <a href="/contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
 
   <main class="resume-container">
     <section class="resume-header">
       <h1>Guy T. Teets, GICSP, GSTRT</h1>
-      <p>Clermont, FL 34711<br />
-         <a href="tel:8632169221">863-216-9221</a> |
-         <a href="mailto:guy.t.teets@gmail.com">guy.t.teets@gmail.com</a><br />
-         <a href="https://www.linkedin.com/in/guyteets/" target="_blank">LinkedIn</a> |
-         <a href="https://vaktnet.github.io/" target="_blank">Portfolio Site</a>
+      <p style="text-align: center;">
+        Clermont, FL 34711<br />
+        <a href="tel:8632169221">863-216-9221</a> |
+        <a href="mailto:guy.t.teets@gmail.com">guy.t.teets@gmail.com</a><br />
+        <a href="https://www.linkedin.com/in/guyteets/" target="_blank">LinkedIn</a> |
+        <a href="https://vaktnet.github.io/" target="_blank">Portfolio Site</a>
       </p>
     </section>
 
@@ -112,7 +126,7 @@
 
     <section class="download-resume">
       <h2>Download Resume</h2>
-      <p><a href="/assets/GTeets_Resume_06-2025.pdf" target="_blank">Download PDF version of this resume</a></p>
+      <p style="text-align: center;"><a href="/assets/GTeets_Resume_06-2025.pdf" target="_blank">Download PDF version of this resume</a></p>
     </section>
   </main>
 </body>
