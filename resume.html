@@ -6,7 +6,17 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Guy Teets – Resume</title>
 
-</head>
+<style>
+.nav-links .dropdown.open .dropdown-menu {
+  display: block;
+}
+@media (max-width: 768px) {
+  .nav-links .dropdown-menu {
+    display: none;
+    padding-left: 1rem;
+  }
+}
+</style></head>
 <body>
 <nav class="navbar">
 <div class="nav-container">
@@ -111,5 +121,20 @@
 <p style="text-align: center;"><a href="/assets/GTeets_Resume_06-2025.pdf" target="_blank">Download PDF version of this resume</a></p>
 </section>
 </main>
-<section class="download-section" style="text-align:center; margin-top: 3rem;"><h2>Want a PDF version?</h2><a class="download-button" href="assets/GTeets_Resume_06-2025.pdf" style="display: inline-block; padding: 0.75rem 1.5rem; font-size: 1rem; color: white; background-color: #0047AB; border-radius: 999px; text-decoration: none; margin-top: 1rem;">Download Resume</a></section></body>
+<section class="download-section" style="text-align:center; margin-top: 3rem;"><h2>Want a PDF version?</h2><a class="download-button" href="assets/GTeets_Resume_06-2025.pdf" style="display: inline-block; padding: 0.75rem 1.5rem; font-size: 1rem; color: white; background-color: #0047AB; border-radius: 999px; text-decoration: none; margin-top: 1rem;">Download Resume</a></section><script>
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdowns = document.querySelectorAll('.nav-links .dropdown > a');
+
+  dropdowns.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const menuToggle = document.getElementById('menu-toggle');
+      if (menuToggle && menuToggle.checked) {
+        e.preventDefault(); // prevent jumping to href if it's "#"
+        const parent = this.parentElement;
+        parent.classList.toggle('open');
+      }
+    });
+  });
+});
+</script></body>
 </html>
