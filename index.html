@@ -1,86 +1,100 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VaktNet</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VaktNet</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+.nav-links .dropdown.open .dropdown-menu {
+  display: block;
+}
+@media (max-width: 768px) {
+  .nav-links .dropdown-menu {
+    display: none;
+    padding-left: 1rem;
+  }
+}
+</style></head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo-link">
-        <img src="assets/shield-logo.png" alt="VaktNet Logo" class="nav-logo" />
-        <span class="brand-name">VaktNet</span>
-      </a>
-
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
-
-      <ul class="nav-links">
-        <li><a href="#hero">About</a></li>
-        <li class="dropdown">
-          <a href="#projects">Projects ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="epic-universe.html">Epic Universe</a></li>
-            <li><a href="disney-ot-wireless.html">Disney OT Cyber</a></li>
-            <li><a href="disney-ot-architecture.html">Disney Security Arch</a></li>
-            <li><a href="disa-jrss.html">DISA MPLS</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Resume ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="resume.html">View Resume</a></li>
-            <li><a href="assets/GTeets_Resume_06-2025.pdf" download>Download PDF</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero-heading">
-    <h1>Guy Teets</h1>
-    <p class="tagline">
-      Strategic Leader – Cybersecurity, OT/ICS, Wireless, Network & Infrastructure Systems (U.S. Navy Veteran)
+<!-- Navigation Bar -->
+<nav class="navbar">
+<div class="nav-container">
+<a class="logo-link" href="index.html">
+<img alt="VaktNet Logo" class="nav-logo" src="assets/shield-logo.png"/>
+<span class="brand-name">VaktNet</span>
+</a>
+<input id="menu-toggle" type="checkbox"/>
+<label class="hamburger" for="menu-toggle">☰</label>
+<ul class="nav-links">
+<li><a href="#hero">About</a></li>
+<li class="dropdown">
+<a href="#projects">Projects ▾</a>
+<ul class="dropdown-menu">
+<li><a href="epic-universe.html">Epic Universe</a></li>
+<li><a href="disney-ot-wireless.html">Disney OT Cyber</a></li>
+<li><a href="disney-ot-architecture.html">Disney Security Arch</a></li>
+<li><a href="disa-jrss.html">DISA MPLS</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">Resume ▾</a>
+<ul class="dropdown-menu"><li><a href="resume.html">View Resume</a></li><li></li></ul>
+</li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-heading" id="hero">
+<h1>Guy Teets</h1>
+<p class="tagline">
+      Strategic Leader – Cybersecurity, OT/ICS, Wireless, Network &amp; Infrastructure Systems (U.S. Navy Veteran)
     </p>
-  </section>
-
-  <!-- Bio Section -->
-  <section>
-    <h2>Cyber-Physical Systems & Infrastructure Security Leader</h2>
-    <p class="subtext">Technology Strategy & Innovation Leader</p>
-    <p>
+</section>
+<!-- Bio Section -->
+<section>
+<h2>Cyber-Physical Systems &amp; Infrastructure Security Leader</h2>
+<p class="subtext">Technology Strategy &amp; Innovation Leader</p>
+<p>
       Mission-driven technology leader with a proven record of impact across defense, themed entertainment, and critical infrastructure. Skilled at building and leading high-performing teams to solve complex challenges in wireless, cybersecurity, and enterprise network systems—delivering secure, resilient solutions aligned with regulatory, security, operational, and human needs. Known for bridging the gap between engineering precision and strategic vision, leading with integrity, curiosity, and a deep respect for the people in front of and behind the systems.
     </p>
-  </section>
+</section>
+<!-- Projects Section -->
+<section id="projects">
+<h2>Featured Projects</h2>
+<ul>
+<li><strong>Epic Universe</strong> – Parkwide wireless architecture &amp; delivery for Universal’s largest theme park.</li>
+<li><strong>Disney OT Cybersecurity</strong> – Secured ride systems and facility networks for over 40 attractions.</li>
+<li><strong>Security Architecture at Disney</strong> – Integrated physical access control and cybersecurity for multi-layered defense.</li>
+<li><strong>DISA MPLS Upgrade</strong> – Designed and led enterprise communications infrastructure deployments for military sites across Europe and Asia.</li>
+</ul>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact</h2>
+<p>To connect, use the form below or email me directly at <a href="mailto:guy.t.teets@gmail.com">guy.t.teets@gmail.com</a>.</p>
+<form action="https://formspree.io/f/xzzgkkbz" method="POST">
+<input name="email" placeholder="Your email" required="" type="email"/>
+<textarea name="message" placeholder="Your message" required=""></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdowns = document.querySelectorAll('.nav-links .dropdown > a');
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <ul>
-      <li><strong>Epic Universe</strong> – Parkwide wireless architecture & delivery for Universal’s largest theme park.</li>
-      <li><strong>Disney OT Cybersecurity</strong> – Secured ride systems and facility networks for over 40 attractions.</li>
-      <li><strong>Security Architecture at Disney</strong> – Integrated physical access control and cybersecurity for multi-layered defense.</li>
-      <li><strong>DISA MPLS Upgrade</strong> – Designed and led enterprise communications infrastructure deployments for military sites across Europe and Asia.</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>To connect, use the form below or email me directly at <a href="mailto:guy.t.teets@gmail.com">guy.t.teets@gmail.com</a>.</p>
-    <form action="https://formspree.io/f/xzzgkkbz" method="POST">
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-</body>
-
+  dropdowns.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const menuToggle = document.getElementById('menu-toggle');
+      if (menuToggle && menuToggle.checked) {
+        e.preventDefault(); // prevent jumping to href if it's "#"
+        const parent = this.parentElement;
+        parent.classList.toggle('open');
+      }
+    });
+  });
+});
+</script></body>
 </html>
