@@ -348,6 +348,36 @@ input:focus, textarea:focus, button:focus {
   background-color: #ccc;
 }
 
+/* === Project Buttons (The Story Continues...) === */
+.story-buttons a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e0e0e0; /* light gray */
+  color: #0033cc; /* dark cobalt blue */
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  margin: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.story-buttons a:hover {
+  background-color: #d5d5d5; /* slightly darker gray */
+}
+
+/* === View Resume Button === */
+.view-resume-btn {
+  background-color: #cce0ff; /* light cobalt blue */
+  color: #002266; /* navy blue text */
+}
+
+/* === Download Resume Button === */
+.download-resume-btn {
+  background-color: #0033cc; /* cobalt blue */
+  color: white;
+}
+
 /* === Resume Buttons (overrides for clarity) === */
 .view-resume-btn {
   background-color: #66aaff;
