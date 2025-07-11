@@ -366,25 +366,43 @@ input:focus, textarea:focus, button:focus {
   background-color: #d5d5d5; /* slightly darker gray */
 }
 
-/* === View Resume Button === */
-.view-resume-btn {
-  background-color: #cce0ff; /* light cobalt blue */
-  color: #002266; /* navy blue text */
+/* === Resume Buttons === */
+.resume-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-/* === Download Resume Button === */
+.view-resume-btn,
 .download-resume-btn {
-  background-color: #0033cc; /* cobalt blue */
-  color: white;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* === Resume Buttons (overrides for clarity) === */
+/* View Resume: light blue background with dark blue text */
 .view-resume-btn {
-  background-color: #66aaff;
+  background-color: #cce0ff;
   color: #0033cc;
 }
 
+.view-resume-btn:hover {
+  background-color: #b3d1ff;
+}
+
+/* Download Resume: bold cobalt blue with white text */
 .download-resume-btn {
-  background-color: #0047AB;
+  background-color: #0033cc;
   color: #ffffff;
+}
+
+.download-resume-btn:hover {
+  background-color: #0022aa;
 }
