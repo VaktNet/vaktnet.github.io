@@ -1,38 +1,51 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROTR & Falcon – OT Wireless & Cyber – VaktNet</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VaktNet</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+.nav-links .dropdown.open .dropdown-menu {
+  display: block;
+}
+@media (max-width: 768px) {
+  .nav-links .dropdown-menu {
+    display: none;
+    padding-left: 1rem;
+  }
+}
+</style></head>
 <body>
-  <header>
-  <div class="header-container">
-    <img src="assets/shield-logo.png" alt="VaktNet Shield Logo" class="logo">
-    <h1>VaktNet</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <a href="#">Projects</a>
-          <ul class="dropdown">
-            <li><a href="epic-universe.html">Epic Universe Wireless & OT Audit</a></li>
-            <li><a href="disney-ot-wireless.html">ROTR & Falcon – OT Wireless & Cyber</a></li>
-            <li><a href="disney-ot-architecture.html">Guardians & Tiana – OT Security & Arch</a></li>
-            <li><a href="disa-jrss.html">DISA MPLS Upgrade / JRSS Arch</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Resume</a>
-          <ul class="dropdown">
-            <li><a href="resume.html">View Resume</a></li>
-            <li><a href="assets/GTeets_Resume_06-2025.pdf" download>Download Resume PDF</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<!-- Navigation Bar -->
+<nav class="navbar">
+<div class="nav-container">
+<a class="logo-link" href="index.html">
+<img alt="VaktNet Logo" class="nav-logo" src="assets/shield-logo.png"/>
+<span class="brand-name">VaktNet</span>
+</a>
+<input id="menu-toggle" type="checkbox"/>
+<label class="hamburger" for="menu-toggle">☰</label>
+<ul class="nav-links">
+<li><a href="#hero">About</a></li>
+<li class="dropdown">
+<a href="#projects">Projects ▾</a>
+<ul class="dropdown-menu">
+<li><a href="epic-universe.html">Epic Universe Wireless & OT Audit</a></li>
+<li><a href="disney-ot-wireless.html">ROTR & Falcon – OT Wireless & Cyber</a></li>
+<li><a href="disney-ot-architecture.html">Guardians & Tiana – OT Security & Arch</a></li>
+<li><a href="disa-jrss.html">DISA MPLS Upgrade / JRSS Arch</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#">Resume ▾</a>
+<ul class="dropdown-menu"><li><a href="resume.html">View Resume</a></li><li></li></ul>
+</li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
 </header>
   <main>
     <section id="project-title">
