@@ -323,3 +323,38 @@ input:focus, textarea:focus, button:focus {
   margin-top: 0;
   text-align: center;
 }
+
+/* === Story Buttons === */
+.story-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.story-buttons a {
+  padding: 0.5rem 1.2rem;
+  background-color: #ddd;
+  color: #0033cc;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.story-buttons a:hover {
+  background-color: #ccc;
+}
+
+/* === Resume Buttons (overrides for clarity) === */
+.view-resume-btn {
+  background-color: #66aaff;
+  color: #0033cc;
+}
+
+.download-resume-btn {
+  background-color: #0047AB;
+  color: #ffffff;
+}
