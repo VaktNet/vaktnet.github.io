@@ -35,6 +35,13 @@
   font-weight: bold;
 }
 
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ddd;
+  margin-top: 0.25rem;
+}
+
 .subtext {
   font-size: 1rem;
   font-weight: 400;
