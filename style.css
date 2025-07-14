@@ -120,6 +120,22 @@ section {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
+.section-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* OR center, depending on design */
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.section-header-flex h3 {
+  margin: 0;
+}
+.section-header-flex a.view-resume-btn {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
 /* === Links === */
 a {
   color: #66aaff;
