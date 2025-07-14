@@ -94,6 +94,17 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.pull-quote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  border-left: 4px solid #00bcd4;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  max-width: 850px;
+}
+
 /* === Sections === */
 section {
   padding: 1rem 2rem;
