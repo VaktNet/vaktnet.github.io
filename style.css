@@ -146,23 +146,24 @@ section {
 
 .summary-with-image {
   display: flex;
-  align-items: center; /* vertically center */
+  align-items: center;           /* vertically center */
   justify-content: space-between;
   gap: 2rem;
-  flex-wrap: wrap; /* allows stacking on small screens */
+  flex-wrap: wrap;               /* stacks on mobile */
 }
 
 .summary-text {
-  flex: 1 1 60%;
+  flex: 1 1 65%;                 /* ~65% of width */
 }
 
 .summary-image {
-  flex: 1 1 35%;
+  flex: 1 1 30%;                 /* ~30% of width */
+  max-width: 30%;                /* hard cap */
   text-align: center;
 }
 
 .summary-image img {
-  max-width: 100%;
+  width: 100%;                   /* scale inside container */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
