@@ -98,11 +98,16 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   font-weight: bold;
   font-size: 1.15rem;
-  color: #e0e0e0;
+  color: #ffffff;
   border-left: 4px solid #00bcd4;
   padding-left: 1rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
   max-width: 850px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 188, 212, 0.2);
+  border-radius: 6px;
 }
 
 /* === Sections === */
