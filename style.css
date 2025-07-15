@@ -163,11 +163,12 @@ section {
 }
 
 .summary-image img {
-  width: 100%;                   /* scale inside container */
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* soft shadow */
 }
+
 /* Bridging Worlds layout */
 .bridging-with-image {
   display: flex;
@@ -193,7 +194,7 @@ section {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* soft shadow */
 }
 
 /* Team Photo section */
@@ -223,7 +224,7 @@ section {
   max-width: 1000px;   /* optional hard cap */
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* soft shadow */
 }
 
 figure {
