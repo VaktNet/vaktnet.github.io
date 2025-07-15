@@ -226,6 +226,19 @@ section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
 /* === Links === */
 a {
   color: #66aaff;
