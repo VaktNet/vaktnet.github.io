@@ -1,112 +1,187 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>VaktNet</title>
-<link href="style.css" rel="stylesheet"/>
-<style>
-.nav-links .dropdown.open .dropdown-menu {
-  display: block;
-}
-@media (max-width: 768px) {
-  .nav-links .dropdown-menu {
-    display: none;
-    padding-left: 1rem;
-  }
-}
-</style></head>
+<link href="style.css" rel="stylesheet" />
+</head>
 <body>
-<!-- Navigation Bar -->
+
+<!-- Navigation Bar (same across pages) -->
 <nav class="navbar">
-<div class="nav-container">
-<a class="logo-link" href="index.html">
-<img alt="VaktNet Logo" class="nav-logo" src="assets/shield-logo.png"/>
-<span class="brand-name">VaktNet</span>
-</a>
-<input id="menu-toggle" type="checkbox"/>
-<label class="hamburger" for="menu-toggle">☰</label>
-<ul class="nav-links">
-<li><a href="about.html">About</a></li>
-<li class="dropdown">
-<a href="#projects">Projects ▾</a>
-<ul class="dropdown-menu">
-<li><a href="epic-universe.html">Epic Universe Wireless & OT Audit</a></li>
-<li><a href="disney-ot-wireless.html">ROTR & Falcon – OT Wireless & Cyber</a></li>
-<li><a href="disney-ot-architecture.html">Guardians & Tiana – OT Security & Arch</a></li>
-<li><a href="disa-jrss.html">DISA MPLS Upgrade / JRSS Arch</a></li>
-</ul>
-</li>
-<li class="dropdown">
-  <a href="#">Resume ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="resume.html">View Resume</a></li>
-    <li><a href="assets/GTeets_Resume_06-2025.pdf" download>Download Resume</a></li>
-  </ul>
-</li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
+  <div class="nav-container">
+    <a class="logo-link" href="index.html">
+      <img alt="VaktNet Logo" class="nav-logo" src="assets/shield-logo.png"/>
+      <span class="brand-name">VaktNet</span>
+    </a>
+    <input id="menu-toggle" type="checkbox"/>
+    <label class="hamburger" for="menu-toggle">☰</label>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="#projects">Projects ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="epic-universe.html">Epic Universe Wireless & OT Audit</a></li>
+          <li><a href="disney-ot-wireless.html">ROTR & Falcon – OT Wireless & Cyber</a></li>
+          <li><a href="disney-ot-architecture.html">Guardians & Tiana – OT Security & Arch</a></li>
+          <li><a href="disa-jrss.html">DISA MPLS Upgrade / JRSS Arch</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Resume ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="resume.html">View Resume</a></li>
+          <li><a href="assets/GTeets_Resume_06-2025.pdf" download>Download Resume</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 </nav>
-</header>
-  <main>
-    <section id="project-title">
-      <h1>ROTR & Falcon – OT Wireless & Cyber</h1>
-      <h2 class="project-subtitle">Designed and implemented secure wireless ride & show controls netowork ensuring 95% uptime and 100% cyber compliance.</h2>
-    </section>
 
-    <section id="skills">
-      <h3>Key Skills</h3>
-      <div class="skills-grid">
-        <span>Skill 1</span><span>Skill 2</span><span>Skill 3</span>
-        <span>Skill 4</span><span>Skill 5</span><span>Skill 6</span>
-        <span>Skill 7</span><span>Skill 8</span><span>Skill 9</span>
-        <span>skill 10</span><span>skill 11</span><span>skill 12</span>
-      </div>
-    </section>
+<main>
 
-    <section id="summary">
-      <h3>Summary</h3>
-      <p><!-- INSERT ONE-PARAGRAPH SUMMARY HERE --></p>
-    </section>
+<!-- Title Section -->
+<section id="project-title">
+  <h1>RotR &amp; Falcon – OT Wireless & Cyber</h1>
+  <h2 class="project-subtitle">Engineering the Cyber Backbone of Batuu—Invisible Networks that Keep the Resistance Connected and the Falcon Flying</h2>
+</section>
 
-    <section id="narrative">
-      <h3>Project Narrative</h3>
-      <p><!-- INSERT PARAGRAPH 1 HERE --></p>
-      <p><!-- INSERT PARAGRAPH 2 HERE --></p>
-      <p><!-- INSERT PARAGRAPH 3 HERE --></p>
-      <p><!-- INSERT PARAGRAPH 4 HERE --></p>
-      <p><!-- INSERT CLOSING PARAGRAPH HERE --></p>
-      <!-- INSERT IMAGE EMBED HERE -->
-      <!-- INSERT YOUTUBE VIDEO EMBED HERE (skip for disa-jrss.html) -->
-    </section>
+<!-- Skills -->
+<section id="skills">
+  <h3>Key Skills</h3>
+  <div style="text-align: center; margin-bottom: 1.5rem;">
+    <a href="#achievements" class="view-resume-btn">Quick Project Takeaways</a>
+  </div>
+  <div class="skills-grid">
+    <!-- Replace or keep relevant skill bubbles -->
+        <span>Wireless Systems Integration</span><span>MPLS Network Design</span><span>Industrial Control Systems Security</span>
+        <span>FluidMesh Deployment</span><span>R‑Coax (Leaky Coax) Integration</span><span>Resilient Wi‑Fi Design</span>
+        <span>Test &amp; Adjust Coordination</span><span>Vulnerability Assessments</span><span>Cross‑Functional Team Coordination</span>
+        <span>Modified Purdue Architecture</span><span>Operational Technology Monitoring</span><span>Theme Park Systems Engineering</span>
+  </div>
+</section>
 
+<!-- Summary -->
+<section id="summary" class="summary-with-image">
+  <div class="summary-text">
+    <h3>Summary</h3>
+    <p>Joining Disney was more than a career move—it was a childhood dream realized and a calculated leap into the unknown. For 13 years I had served in the U.S. Navy, followed by seven more in the Department of Defense at DISA. Nearly my entire professional identity had been built around military and defense systems, with only two short years outside that world. Stepping into themed entertainment meant leaving behind a field where I was deeply established and entering an industry where magic, story, and guest experience drive every decision. It was exhilarating—and risky. But the chance to bring my technical expertise to life in a place that had inspired me since I was a boy was a risk worth taking. I still remember watching EPCOT being built as a child; this move filled my head with the idea that I could help make the very magic I had grown up with my whole life.</p>
+
+    <p>Half a year later, I walked the dusty streets of a construction site that would become Batuu. I stepped into a massive hangar bay flanked by towering AT‑ATs, and only a few hours later I was sitting in the pilot seat of “the fastest hunk of junk in the galaxy”—the Millennium Falcon itself. My mission on this project was clear: engineer and secure the cyber backbone of Star Wars: Galaxy’s Edge. From covert security layers guarding Resistance secrets to ride‑critical wireless networks ensuring the Falcon could launch flawlessly, every signal mattered. This was more than infrastructure—it was the invisible foundation that kept the Resistance connected, the Falcon flying, and the story alive for millions of future guests.</p>
+  </div>
+
+  <div class="summary-image">
+    <img src="assets/RotR-project-collage.JPG" alt="Collage showing Rise of the Resistance hangar, Millennium Falcon cockpit, and project involvement">
+  </div>
+</section>
+
+<section id="narrative">
+  <h3>Project Narrative</h3>
+
+  <!-- More Than a Wireless Guy with image -->
+  <div class="bridging-with-image">
+    <div class="bridging-text">
+      <h4>More Than a Wireless Guy</h4>
+      <p>When I first joined Disney, I was brought in for my wireless technology, networking, and MPLS experience—skills the company needed as <em>Rise of the Resistance</em> would deploy FluidMesh technology long before it became part of Cisco’s portfolio. Within my first six months, I had already proven I was more than “just wireless.”</p>
+      <p>My first assignment was a trip to the Cretaceous period on the Dinosaur attraction at Disney’s Animal Kingdom; Time Rover vehicles had been losing communication, which could prevent their return to the modern era. I designed and directed the installation of a time‑tested, resilient system with seamless coverage across the Cretaceous expanse, using Siemens SCALANCE iWLAN on Rover vehicles and Cisco wayside access points deployed with fully integrated security. Soon after, I was bouncing between the 18th and 20th centuries as I coordinated and ran vulnerability assessment efforts for Pirates of the Caribbean and Monorails—demonstrating not just technical agility, but a kind of temporal flexibility across attractions that not only portray different points in time, but were engineered in entirely different technical eras. Those early wins showed leadership they could trust me with both wireless and cyber—a foundation that would shape my next assignment.</p>
+    </div>
+    <div class="bridging-image">
+      <figure>
+        <img src="assets/Dino-pirates.jpg" alt="Collage of Dinosaur Time Rover vehicles and Pirates of the Caribbean show scene">
+        <figcaption>Early successes: improving wireless coverage on <em>Dinosaur</em> and leading vulnerability efforts on <em>Pirates of the Caribbean</em>.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h4>Landing in Batuu</h4>
+  <p>Half a year after starting this Disney adventure, I walked the dusty, unfinished streets of a construction site that would soon become Batuu. Wearing a hard hat and vest, I followed the team through concrete corridors and past scaffolding until we reached a large, dim room draped with heavy black curtains. Following the team through, I froze in my tracks. The space opened into a massive hangar—towering AT‑ATs looming overhead, fully finished walls and lighting in place. I stood there, mouth open, in awe that I was <em>inside</em> Star Wars for the first time in my life. I had seen <em>Return of the Jedi</em> in theaters as a kid, but nothing prepared me for standing in that hangar. The rest of the team, already familiar with the space, kept walking. About twenty feet ahead they noticed I wasn’t with them, and one teammate came back, smiled, and said, “That was my reaction the first time too.” That moment grounded me. I wasn’t just building systems; I was helping bring a story I’d loved since childhood into the real world. From that point on, I set out to integrate seamlessly with Imagineers, show and ride controls engineers, and contractors, translating my technical skills into the language of themed entertainment.</p>
+
+  <h4>Engineering the Backbone of the Resistance</h4>
+  <p>Once immersed in the project, I got to work understanding the network architecture and integrating into project teams that had already been in place for two years. I led a redesign from an enterprise‑based model to a modified Purdue model, incorporating firewalls, log collectors, intrusion detection for industrial control systems, and operational monitoring—all feeding into a centralized Attractions Operational Technology (AOT) data center.</p>
+  <p>The galaxy, it seemed, still had need of my wireless force. Side by side with Disney ride and show controls engineers and Prism Systems contractors, I helped deploy FluidMesh‑based vehicle communication systems for <em>Rise of the Resistance</em> while simultaneously supporting the R‑Coax (leaky coax) systems for <em>Millennium Falcon: Smuggler’s Run</em>. These deployments required not just engineering precision, but also creativity in adapting industrial technologies to the unique demands of a theme park environment.</p>
+
+  <h4>Schematics to Launch Bays</h4>
+  <p>As opening day approached, I worked closely with test and adjust teams, validating configurations, assisting with troubleshooting, and documenting every layer of the systems we put in place. <em>Millennium Falcon: Smuggler’s Run</em> opened on schedule with wireless and network systems performing flawlessly, while <em>Rise of the Resistance</em>—with its unprecedented integration of multiple ride systems—required additional months of refinement before opening in December 2019. I was part of the opening cast at Walt Disney World and, shortly after, joined the Disneyland project team to support the California debut in January 2020. These projects were not just about systems and signals; they were about building invisible foundations that carried the weight of some of the most ambitious attractions Disney had ever attempted—all to be experienced by some of the most devoted fans in any galaxy.</p>
+
+  <h4>Unseen Systems, The Force Remains Strong</h4>
+  <p>Looking back, the work we did in Galaxy’s Edge is as invisible to guests as it is indispensable. Hidden antennas, secure networks, and vehicle communications systems quietly power every Resistance mission and every Falcon flight. Guests don’t see the systems we built, but they feel their impact in every seamless show action and every perfectly timed launch. For me, this wasn’t just another deployment—it was proof that taking a leap of faith could put you in the middle of a story you’ve loved your whole life ...</p>
+  <blockquote class="pull-quote">
+  <strong><em>“…shaping it for millions of others to experience and write their own immersive Star Wars saga.”</em></strong>
+</blockquote>
+</section>
+
+<!-- Achievements -->
+<section id="achievements">
+  <h3>Key Achievements – RotR &amp; Falcon</h3>
+ <ul class="achievement-list">
+    <li>Delivered enterprise‑grade wireless architecture and cybersecurity practices into themed entertainment, proving technical agility beyond initial wireless role within six months.</li>
+    <li>Designed and directed installation of a Siemens SCALANCE iWLAN / Cisco hybrid system achieving 100% ride‑path coverage for <em>Dinosaur</em>, eliminating vehicle communication gaps.</li>
+    <li>Led vulnerability assessments for <em>Pirates of the Caribbean</em> and Monorails, showcasing cybersecurity leadership across legacy and modern infrastructure.</li>
+    <li>Redesigned Galaxy’s Edge attraction networks from an enterprise base to a modified Purdue model with firewalls, intrusion detection for ICS, and centralized AOT monitoring.</li>
+    <li>Worked alongside Imagineers and Prism Systems engineers to deploy FluidMesh wireless control for <em>Rise of the Resistance</em> trackless vehicles long before Cisco acquisition.</li>
+    <li>Supported R‑Coax (leaky coax) systems for <em>Millennium Falcon: Smuggler’s Run</em>, integrating wireless and industrial controls into a high‑reliability ride environment.</li>
+    <li>Partnered across ride and show controls, IT security, and field contractors to integrate and test new systems in active construction zones.</li>
+    <li>Provided on‑site troubleshooting, validation, and documentation during test &amp; adjust phases, ensuring systems supported opening day operations at Walt Disney World and Disneyland.</li>
+  </ul>
+</section>
+
+<!-- Embedded Video Section -->
+<section id="RotR-ride-along">
+  <h3>You Can Join the Resistance</h3>
+  <p>
+    Ride along as part of the Resistance in this <strong>4‑minute, 31‑second</strong> video I recorded in 2020 after <em>Rise of the Resistance</em> opened.  
+    Video courtesy of my own channel, 
+    <a href="https://www.youtube.com/@GuyTall" target="_blank" rel="noopener"><u>Guy T</u></a>.
+  </p>
+
+  <p>The security and wireless architecture I integrated included:</p>
+  <ul class="achievement-list">
+    <li>FluidMesh‑based trackless vehicle communications</li>
+    <li>Secure MPLS network backbone within the attraction</li>
+    <li>Intrusion detection and monitored industrial controls</li>
+    <li>R‑Coax (leaky coax) wireless control integration</li>
+    <li>Centralized AOT data center connectivity</li>
+  </ul>
+
+  <iframe width="100%" height="400"
+    src="https://www.youtube.com/embed/YQB6nMOjwbc?si=S-B2kAmvkx00BuOo"
+    title="Rise of the Resistance Ride Along"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</section>
+
+
+<!-- The Story Continues -->
 <section>
   <h3 class="section-title">The Story Continues...</h3>
-  
   <div class="story-buttons">
     <a class="project-nav-btn" href="epic-universe.html">Epic Universe – Wireless & OT Audit</a>
     <a class="project-nav-btn" href="disney-ot-architecture.html">Guardians & Tiana – OT Security & Arch</a>
     <a class="project-nav-btn" href="disa-jrss.html">DISA MPLS Upgrade / JRSS Arch</a>
   </div>
-
   <div class="resume-links">
     <a class="view-resume-btn" href="resume.html">View Resume (opens in browser)</a>
     <a class="download-resume-btn" href="assets/GTeets_Resume_06-2025.pdf" download>Download Resume PDF</a>
   </div>
 </section>
 
-    <section id="contact">
+<!-- Contact -->
+<section id="contact">
   <h3>Contact</h3>
   <p>Email: <a href="mailto:guy.t.teets@gmail.com">guy.t.teets@gmail.com</a></p>
   <p><a href="https://www.linkedin.com/in/guyteets" target="_blank">Connect on LinkedIn</a></p>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
+  <form action="https://formspree.io/f/xzzgkkbz" method="POST">
     <input type="email" name="email" placeholder="Your email" required>
     <textarea name="message" placeholder="Your message" required></textarea>
     <button type="submit">Send</button>
   </form>
 </section>
-  </main>
+
+</main>
 </body>
 </html>
