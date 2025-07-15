@@ -168,7 +168,7 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
-
+/* Bridging Worlds layout */
 .bridging-with-image {
   display: flex;
   align-items: center;
@@ -184,13 +184,43 @@ section {
 }
 
 .bridging-image {
-  flex: 1 1 30%;
+  flex: 1 1 30%;      /* right side image container */
   max-width: 30%;
   text-align: center;
 }
 
 .bridging-image img {
   width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Team Photo section */
+.team-photo-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.team-photo-section h3 {
+  margin-bottom: 0.5rem;
+}
+
+.team-photo-section p {
+  margin-bottom: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.team-photo-wrapper img {
+  width: 60%;          /* scales to 60% of container */
+  max-width: 1000px;   /* optional hard cap */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
