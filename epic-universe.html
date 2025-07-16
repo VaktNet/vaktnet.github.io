@@ -80,7 +80,7 @@
       <p>I was called upon to help Dragons soar, Monsters roar, and each visiting Wizard expand their lore—to bring Nintendo’s world to life with Mario and Donkey Kong, and give the Celestials a fantastic cosmos to explore. In short, my team and I had to make magic real—by orchestrating the invisible infrastructure of radio frequency systems, the so‑called ‘dark magic’ behind modern themed experiences.</p>
     </div>
     <div class="summary-image">
-      <img src="assets/Epic-Google-Map.png" alt="Epic Universe construction map from Google Maps">
+      <img class="enlargeable" src="assets/Epic-Google-Map.png" alt="Epic Universe construction map from Google Maps">
     </div>
   </section>
 
@@ -101,7 +101,7 @@
       </div>
       <div class="bridging-image">
         <figure>
-          <img src="assets/Themed-Antennas.jpg" alt="Collage showing themed Wi‑Fi, two‑way radio, and DAS across Epic Universe">
+          <img class="enlargeable" src="assets/Themed-Antennas.jpg" alt="Collage showing themed Wi‑Fi, two‑way radio, and DAS across Epic Universe">
           <figcaption>Wireless systems themed and integrated seamlessly into Epic Universe’s immersive environments.</figcaption>
         </figure>
       </div>
@@ -129,7 +129,7 @@
   <h4>The Team Behind the RF Magic</h4>
   <div class="team-photo-wrapper">
     <figure>
-      <img src="assets/PWS-Wireless-Team.JPG" alt="Wireless systems team in front of The Chronos at Epic Universe">
+      <img class="enlargeable" src="assets/PWS-Wireless-Team.JPG" alt="Wireless systems team in front of The Chronos at Epic Universe">
       <figcaption>
         Parkwide Systems Wireless Team in front of <em>The Chronos</em>.<br/>
         Celebrating the first day non‑project Team Members (TMs) pass through the portals and feel the magic that 400+ UC TMs and thousands of contractors brought to life.
@@ -200,5 +200,36 @@
   </section>
 
 </main>
+
+<!-- Image Modal (Lightbox) -->
+<div id="imgModal" class="img-modal">
+  <span class="img-modal-close">&times;</span>
+  <img class="img-modal-content" id="imgModalContent" alt="">
+</div>
+
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("imgModalContent");
+  const closeBtn = document.querySelector(".img-modal-close");
+
+  document.querySelectorAll("img.enlargeable").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+
 </body>
 </html>
