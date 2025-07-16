@@ -591,6 +591,10 @@ input:focus, textarea:focus, button:focus {
   }
 }
 
+img.enlargeable {
+  cursor: pointer;
+}
+
 .img-modal {
   display: none;
   position: fixed !important; /* force overlay behavior */
