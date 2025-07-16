@@ -350,7 +350,7 @@ button:hover {
   padding-left: 0;
   display: none;
   position: absolute;
-  background-color: #222;
+  background-color: #081828; /* dark blue from your background image */
   top: 100%;
   left: 0;
   min-width: 180px;
