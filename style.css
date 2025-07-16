@@ -550,3 +550,31 @@ input:focus, textarea:focus, button:focus {
 .download-resume-btn:hover {
   background-color: #0022aa;
 }
+
+/* Media fix for mobile */
+@media (max-width: 768px) {
+  .summary-with-image,
+  .bridging-with-image {
+    flex-direction: column;      /* stack vertically */
+    text-align: center;
+  }
+
+  .summary-text,
+  .bridging-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .summary-image,
+  .bridging-image {
+    flex: 1 1 100%;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .summary-image img,
+  .bridging-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
