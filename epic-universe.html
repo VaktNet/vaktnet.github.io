@@ -231,5 +231,19 @@
   };
 </script>
 
+  <script>
+// new dropdown toggle script
+document.querySelectorAll('.nav-links .dropdown > a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const parent = this.parentElement;
+    parent.classList.toggle('open');
+    document.querySelectorAll('.nav-links .dropdown').forEach(d => {
+      if (d !== parent) d.classList.remove('open');
+    });
+  });
+});
+</script>
+  
 </body>
 </html>
