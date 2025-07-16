@@ -244,6 +244,19 @@ document.querySelectorAll('.nav-links .dropdown > a').forEach(link => {
   });
 });
 </script>
+
+<script>
+// Close hamburger menu when clicking outside
+document.addEventListener('click', function (e) {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navContainer = document.querySelector('.nav-container');
+
+  // If menu is open and click is outside nav container and not the hamburger
+  if (menuToggle.checked && !navContainer.contains(e.target)) {
+    menuToggle.checked = false; // close the menu
+  }
+});
+</script>
   
 </body>
 </html>
